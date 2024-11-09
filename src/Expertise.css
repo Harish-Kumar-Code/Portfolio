@@ -1,0 +1,72 @@
+.Expertise {
+  padding: 60px;
+  text-align: center;
+  background: linear-gradient(145deg, #1e1e1e, #282c34);
+  color: #78a6d5;
+  font-family: 'Roboto', sans-serif;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.Expertise:hover {
+  transform: scale(1.02);
+}
+
+.Expertise h2 {
+  font-size: 2.4rem;
+  color: #ffffff;
+  margin-bottom: 25px;
+  position: relative;
+  display: inline-block;
+}
+
+.Expertise h2::after {
+  content: '';
+  width: 70%;
+  height: 3px;
+  background: #78a6d5;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -8px;
+  border-radius: 2px;
+}
+
+.Expertise ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.Expertise ul li {
+  font-size: 1.2rem;
+  color: #78a6d5;
+  background: rgba(120, 166, 213, 0.1);
+  padding: 12px 18px;
+  margin: 6px;
+  border-radius: 8px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  cursor: pointer;
+}
+
+.Expertise ul li:hover {
+  background-color: #78a6d5;
+  color: #ffffff;
+  transform: translateY(-5px) scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .Expertise h2 {
+      font-size: 2rem;
+  }
+
+  .Expertise ul li {
+      font-size: 1.1rem;
+      padding: 10px 14px;
+  }
+}
